@@ -29,8 +29,10 @@ In the spirit of the "fixed arms" on a Wing Chun dummy, I keep a notecard beside
 11) Create
 12) Iterate
 
+Lastly, I've attempted to spin Eliza into something that more closely resembles the Socratic Method, especially in the context of The Five Whys, or as adapted by Eliyahu Goldratt with his Theory of Constraints.
 
-MORE RESOURCES ON WING CHUN
+
+## MORE RESOURCES ON WING CHUN
 * https://www.dragoninst.com/blog/what-is-the-wooden-dummy-for/
 * https://en.wikipedia.org/wiki/Wing_Chun
 * VIDEO https://youtu.be/GZTcDm-MGDo from Dynatsy MMA
@@ -40,7 +42,7 @@ MORE RESOURCES ON WING CHUN
 
 https://adamweissman.github.io/wingchun/
 
-# STANDING ON THE SHOULDERS OF GIANTS - THIS PROJECT IS LARGELY UN-ORIGINAL, EXCEPT WHERE IT'S NOT
+# STANDING ON THE SHOULDERS OF GIANTS - THE TECHNICAL ASPECTS OF THIS PROJECT ARE LARGELY UN-ORIGINAL
 
 ### What I did NOT create?
 
@@ -49,13 +51,13 @@ https://adamweissman.github.io/wingchun/
   * To learn more about ELIZA, please visit https://en.wikipedia.org/wiki/ELIZA  
   * My images are from the NOUN PROJECT, see the individual PNGs in the asset folder attribution.  
   * Special THANKS to this code pen for the neon glow: https://codepen.io/FelixRilling/pen/qzfoc which I modified to apply to box shadows  
-	* Also am in awe of the creators of this https://www.vantajs.com/ 
+	* Also am in awe of the creators of this https://www.vantajs.com/  
 
 ### What I DID create?
 
-  * custom responses that go beyond "rubber ducking"  
+  * custom responses that go beyond "rubber ducking"
 	* While working on coding challenges upon graduation Flatiron Software Engineering School, I often attempt to find a "better" way to solve a problem than how I do the first time around, always with a goal of finding what is not only essential but what generalizes.  I have blogged about many of my experiences and approaches here, constantly refactoring for self improvement: https://comedytragedyepic.com/learning-advice/  
-	* Perhaps the two approaches most relevant to what I'm attempting here, with "Wing Chun", can be read in my blog post: A Recursive Approach to Problem Solving: https://comedytragedyepic.com/a-recursive-approach-to-problem-solving/ and the note card that I keep beside my computer desk which is covered 
+	* Perhaps the two approaches most relevant to what I'm attempting here, with "Wing Chun", can be read in my blog post: A Recursive Approach to Problem Solving: https://comedytragedyepic.com/a-recursive-approach-to-problem-solving/ and the note card that I keep beside my computer desk which is covered in the intro section.
 
 
 
