@@ -6,10 +6,15 @@
 	/* center the element */
 	right: 0;
 	left: 0;
-	opacity: 95%;
+	clip-path: ellipse(49% 150% at 50% 150%);
+	/* transform: skewY(40%); */
+	/* opacity: 95%; */
 	/* margin-right: auto;
 	margin-left: auto; */
-
+	/* border-radius: 100px; */
+	/* -webkit-animation: neonBlueOuter 1.3s ease-in-out infinite alternate;
+  -moz-animation: neonBlueOuter 1.3s ease-in-out infinite alternate;
+	animation: neonBlueOuter 1.3s ease-in-out infinite alternate; */
 }
 
 
@@ -24,7 +29,7 @@
   font-family: Audiowide;
 	/* border-top-color: #ffffff;
 	border-top-style: solid; */
-	/* clip-path: circle(100% at 50%); */
+	
 
 
 }
@@ -34,12 +39,18 @@
 
 @-webkit-keyframes 
 neonBlue {
+	
+
   from {
+		clip-path: ellipse(49% 150% at 50% 150%);
+		transform: skewY(40%);
     text-shadow: 0 0 5px #fff, 0 0 8px #fff, 0 0 13px #fff, 0 0 8px #228DFF, 0 0 13px #228DFF, 0 0 8px #228DFF, 0 0 13px #228DFF, 0 0 8px #228DFF;
   }
   to {
+		clip-path: ellipse(49% 150% at 50% 150%);
+		transform: skewY(40%);
     text-shadow: 0 0 8px #fff, 0 0 13px #fff, 0 0 21px #fff, 0 0 5px #228DFF, 0 0 8px #228DFF, 0 0 5px #228DFF, 0 0 8px #228DFF, 0 0 5px #228DFF;
-  }
+	};
 }
 
 @-moz-keyframes neonBlue {
@@ -61,6 +72,40 @@ neonBlue {
 }
 
 
+@-webkit-keyframes 
+neonBlueOuter {
+  from {
+    box-shadow: 0 0 5px #fff, 0 0 8px #fff, 0 0 13px #fff, 0 0 8px #228DFF, 0 0 13px #228DFF, 0 0 8px #228DFF, 0 0 13px #228DFF, 0 0 8px #228DFF;
+  }
+  to {
+    box-shadow: 0 0 8px #fff, 0 0 13px #fff, 0 0 21px #fff, 0 0 5px #228DFF, 0 0 8px #228DFF, 0 0 5px #228DFF, 0 0 8px #228DFF, 0 0 5px #228DFF;
+  }
+}
+
+@-moz-keyframes 
+neonBlueOuter {
+  from {
+    box-shadow: 0 0 5px #fff, 0 0 8px #fff, 0 0 13px #fff, 0 0 8px #228DFF, 0 0 13px #228DFF, 0 0 8px #228DFF, 0 0 13px #228DFF, 0 0 8px #228DFF;
+  }
+  to {
+    box-shadow: 0 0 8px #fff, 0 0 13px #fff, 0 0 21px #fff, 0 0 5px #228DFF, 0 0 8px #228DFF, 0 0 5px #228DFF, 0 0 8px #228DFF, 0 0 5px #228DFF;
+  }
+}
+
+@keyframes neonBlueOuter {
+  from {
+    box-shadow: 0 0 5px #fff, 0 0 8px #fff, 0 0 13px #fff, 0 0 8px #228DFF, 0 0 13px #228DFF, 0 0 8px #228DFF, 0 0 13px #228DFF, 0 0 8px #228DFF;
+  }
+  to {
+	
+    box-shadow: 0 0 8px #fff, 0 0 13px #fff, 0 0 21px #fff, 0 0 5px #228DFF, 0 0 8px #228DFF, 0 0 5px #228DFF, 0 0 8px #228DFF, 0 0 5px #228DFF;
+  }
+}
+
+
+
+
+
 .send-textbox{
 	font-family: monospace;
 	font-size: 16px;
@@ -73,6 +118,7 @@ neonBlue {
 }
 
 .send-message-help-below-text{
+	color: black;
 	font-family: monospace;
 	font-size: 10px;
 }
