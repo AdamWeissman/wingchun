@@ -12,24 +12,63 @@
 }
 .send-inner-wrapper{
 	padding-bottom: 10px;
-
 	padding-top: 5px;
+	color: #228DFF;
+	-webkit-animation: neonBlue 1.3s ease-in-out infinite alternate;
+  -moz-animation: neonBlue 1.3s ease-in-out infinite alternate;
+  animation: neonBlue 1.3s ease-in-out infinite alternate;
 
-	background-color: rgb(255, 219, 13);
+  font-family: Audiowide;
 	border-top-color: #ffffff;
 	border-top-style: solid;
-	border-top-width: 3px;
 }
+
+
+
+
+@-webkit-keyframes 
+neonBlue {
+  from {
+    box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #228DFF, 0 0 70px #228DFF, 0 0 80px #228DFF, 0 0 100px #228DFF, 0 0 150px #228DFF;
+  }
+  to {
+    box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #228DFF, 0 0 35px #228DFF, 0 0 40px #228DFF, 0 0 50px #228DFF, 0 0 75px #228DFF;
+  }
+}
+
+@-moz-keyframes neonBlue {
+  from {
+    box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #228DFF, 0 0 70px #228DFF, 0 0 80px #228DFF, 0 0 100px #228DFF, 0 0 150px #228DFF;
+  }
+  to {
+    box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #228DFF, 0 0 35px #228DFF, 0 0 40px #228DFF, 0 0 50px #228DFF, 0 0 75px #228DFF;
+  }
+}
+
+@keyframes neonBlue {
+  from {
+    box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #228DFF, 0 0 70px #228DFF, 0 0 80px #228DFF, 0 0 100px #228DFF, 0 0 150px #228DFF;
+  }
+  to {
+    box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #228DFF, 0 0 35px #228DFF, 0 0 40px #228DFF, 0 0 50px #228DFF, 0 0 75px #228DFF;
+  }
+}
+
+
+
+
+
 .send-textbox{
 	font-family: monospace;
 	font-size: 16px;
-
+	background-color: black;
 	width: 100%;
 	min-width: 100%;
 	max-width: 100%;
 
 	padding: 3px 4px;
 }
+
 .send-message-help-below-text{
 	font-family: monospace;
 	font-size: 10px;
