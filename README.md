@@ -4,8 +4,10 @@
 
 To see the original repo and see all original documentation, please visit https://github.com/keithweaver/eliza
 
-To learn more about ELIZA, please visit https://en.wikipedia.org/wiki/ELIZA))
+To learn more about ELIZA, please visit https://en.wikipedia.org/wiki/ELIZA
 
+# VISIT THE CUSTOM IMPLEMENTATION HERE
 
-### Running
+https://adamweissman.github.io/wingchun/
+
 
