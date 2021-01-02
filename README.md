@@ -29,8 +29,7 @@ In the spirit of the "fixed arms" on a Wing Chun dummy, I keep a notecard beside
 11) Create
 12) Iterate
 
-Lastly, I've attempted to spin Eliza into something that more closely resembles the Socratic Method, especially in the context of The Five Whys, or as adapted by Eliyahu Goldratt with his Theory of Constraints.
-
+Lastly, I've attempted to spin Eliza into something that more closely resembles the Socratic Method in the context of The Five Whys, or as adapted by Eliyahu Goldratt with his Theory of Constraints.
 
 ## MORE RESOURCES ON WING CHUN
 * https://www.dragoninst.com/blog/what-is-the-wooden-dummy-for/
@@ -59,8 +58,8 @@ https://adamweissman.github.io/wingchun/
 	* While working on coding challenges upon graduation Flatiron Software Engineering School, I often attempt to find a "better" way to solve a problem than how I do the first time around, always with a goal of finding what is not only essential but what generalizes.  I have blogged about many of my experiences and approaches here, constantly refactoring for self improvement: https://comedytragedyepic.com/learning-advice/  
 	* Perhaps the two approaches most relevant to what I'm attempting here, with "Wing Chun", can be read in my blog post: A Recursive Approach to Problem Solving: https://comedytragedyepic.com/a-recursive-approach-to-problem-solving/ and the note card that I keep beside my computer desk which is covered in the intro section.
 
+## WHY ALL THE STYLING?
 
-
-
+I've found that a pleasant aesthetic experience causes us to be more reflective and a little more thoughtful, which is the goal of my Eliza remix. 
 
 
