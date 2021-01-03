@@ -5,8 +5,12 @@ var responses = {
 						"Do you understand what the code you have does?",
 						"Do you understand your current code?",
 						"I'm not sure I understand you fully.",
-						"Can you elaborate on *?",
+						"Can you elaborate on \"*\"?",
 						"What do you want to do?",
+						"What is the goal?",
+						"What are some obstacles?",
+						"Do you know the solution, yet lack execution?",
+						"Do you know what you want to do, but are uncertain of the approach?",
 						"Is the obstacle one of syntax or is it conceptual?",
 						"Is this a matter of syntax?",
 						"Let's change focus a bit... Tell me about what you're trying to do.",
@@ -175,7 +179,7 @@ var responses = {
 			},
 	"i don't know" : {
 				"weight" : 6,
-				"responses" : ["You at least know \"*\"", "Look harder.", "Try harder.", "Tell me more about the code.", "Do any of these words jump out at you: \"compare, combine, call, track, set, assign, sort, swap, sample, return, iterate, create, return, replace\"?"]
+				"responses" : ["You at least know \"*\"", "Look harder.", "Try harder.", "Tell me more about the code."]
 			},
 	"i am unsure" : {
 		"weight" : 6,
