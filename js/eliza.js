@@ -2,15 +2,15 @@ var responses = {
 	"NOTFOUND" : {
 				 "weight" : 0,
 				 "responses" : [
-						"What does that suggest to you?",
-						"I see.",
+						"Do you understand what the code you have does?",
+						"Do you understand your current code?",
 						"I'm not sure I understand you fully.",
-						"Can you elaborate?",
-						"That is quite interesting.",
-						"Please tell me more.",
-						"Let's change focus a bit... Tell me about your family.",
-						"Can you elaborate on that?",
-						"Why do you say that *?"
+						"Can you elaborate on *?",
+						"Is the obstacle one of syntax or is it conceptual?",
+						"Is this a matter of syntax?",
+						"Let's change focus a bit... Tell me about what you're trying to do.",
+						"If * isn't the problem, might it be something else?",
+						"Tell me more about *?"
 					]
 				},
 	"sorry" : {
@@ -21,7 +21,7 @@ var responses = {
 				 "responses" : ["Can you think of a specific example?"]},
 	"because" : {
 				 "weight" : 6,
-				 "responses" : ["Is that the real reason?"]},
+				 "responses" : ["Is that the real reason?", "Do you mean because \"*\"", "What other causes might there be?", "What else are we missing?"]},
 	"maybe" : {
 				 "weight" : 1,
 				 "responses" : ["You  don't seem very certain."]},
@@ -44,12 +44,12 @@ var responses = {
 	"i feel" : {
 				 "weight" : 4,
 				 "responses" : ["Tell me more about such feelings.","Do you often feel *?","Do you enjoy feeling *?","Why do you feel that way?"]},
-	"family" : {
+	"code" : {
 				 "weight" : 16,
-				 "responses" : ["Tell me more about your family.","How do you get along with your family?","Is your family important to you?"]},
-	"mother" : {
+				 "responses" : ["Tell me more about your code.","Is there some value you can call, combine, set or assign?","Might you iterate, track, or create some variable?"]},
+	"compare" : {
 				 "weight" : 16,
-				 "responses" : ["Tell me more about your family.","How do you get along with your family?","Is your family important to you?"]},
+				 "responses" : ["Tell me more about the code.","What are you comparing? To what?","If you're going to be comparing values, might you need to track something as well?", "If you're comparing such and such values, is there anything you need to replace, or swap?"]},
 	"father" : {
 				 "weight" : 16,
 				 "responses" : ["Tell me more about your family.","How do you get along with your family?","Is your family important to you?"]},
@@ -148,15 +148,15 @@ var responses = {
 				 "responses" : ["Did you achieve it or simply moved on?"]},
 	"i am frustrated" : {
 				"weight" : 6,
-				"responses" : ["Sorry to hear you are. Tell me about it."]
+				"responses" : ["Sorry to hear you are frustrated. We're only human", "Step back for a moment, clear your mind.", "What can we work on to become unfrustrated?"]
 			},
 	"i am confused" : {
 				"weight" : 6,
-				"responses" : ["That's good. What is making you happy?"]
+				"responses" : ["Do any of these words seem like threads to unravel your confusion... \"compare, combine, call, track, set, assign, sort, swap, sample, return, iterate, create, return, replace\"?"]
 			},
 	"i am lost" : {
 				"weight" : 6,
-				"responses" : ["We'll sort it out."]
+				"responses" : ["We'll sort it out.", "Being lost is the first place we must start in order find where we're going."]
 			},
 	"i am stressed" : {
 				"weight" : 6,
@@ -166,6 +166,14 @@ var responses = {
 				"weight" : 6,
 				"responses" : ["Let's work together.", "The answer is within yourself, it's just a matter of finding it.", "What in particular do you need help on?", "Thank you for letting me know, tell me about the problem.", "Great! Tell me what you're working on."]
 			},
+	"i don't know" : {
+				"weight" : 6,
+				"responses" : ["You at least know \"*\"", "Look harder.", "Try harder.", "Tell me more about the code.", "Do any of these words jump out at you: \"compare, combine, call, track, set, assign, sort, swap, sample, return, iterate, create, return, replace\"?"]
+			},
+	"i am unsure" : {
+		"weight" : 6,
+		"responses" : ["That's okay, but at least what CAN you be sure of?", "Let's make a decision and go from there.", "What's a bad solution look like?", "What do you know you can do for sure, right now?", "Is there anything can we be certain of?"]
+	},
 
 	
 };
@@ -203,6 +211,9 @@ var synonyms = {
 	],
 	"was i" : [
 		"i was"
+	],
+	"unsure" : [
+		"uncertain"
 	]
 };
 /*
@@ -246,6 +257,14 @@ var responsesWithWildcard = {
 							weight : 20,
 							replacementWord : "i need help"
 						},
+	"I *1-3* know" : {	
+						weight : 20,
+						replacementWord : "i don't know"
+					},	
+	"I *1-3* clue" : {	
+						weight : 20,
+						replacementWord : "i don't know"
+					},
 	
 };
 
@@ -259,6 +278,7 @@ var initialMessages = [
 	"What problem are you hoping to solve?",
 	"Hello friend, what problem are you facing?",
 	"Hi, what can I help you with?",
+	"Tell me about your code.",
 	"What brings you here today?",
 	"What struggle do you face with your code?",
 	"What problem are you wrestling with?",
@@ -608,6 +628,7 @@ function removePunctuation(message){
 	message = message.replace("sort of", "sorta")
 	message = message.replace(",","");
 	message = message.replace(";","");
+	message = message.replace("...",".");
 	message = message.replace(".","");
 	message = message.replace("?","");
 	message = message.replace("!","");
