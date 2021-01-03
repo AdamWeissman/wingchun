@@ -230,7 +230,22 @@ var responsesWithWildcard = {
 };
 
 
-var initialMessages = ["Hello. How are you feeling today?"];
+var initialMessages = [
+	"Hi. What are you working on?",
+	"Hello, what difficulty do you face?",
+	"What is the problem you're facing?",
+	"What troubles you?",
+	"What is your goal today?",
+	"What problem are you hoping to solve?",
+	"Hello friend, what problem are you facing?",
+	"Hi, what can I help you with?",
+	"What brings you here today?",
+	"What struggle do you face with your code?",
+	"What problem are you wrestling with?",
+	"What goal are you fighting to achieve?",
+	"What is your current struggle?",
+	"Tell me about the coding problem you face."
+	];
 //var initialMessages = ["Hi there, welcome to my office. I'm here to chat about anything. What's on your mind?", "How do you do. Please tell me your problem.","Please tell me what's been bothering you.", "Is something troubling you?", "Hello. How are you doing today?"];
 var endChatTerms = ["goodbye","I have to leave","I have to leave.","quit","bye","exit"];
 var chatHistory = [];
