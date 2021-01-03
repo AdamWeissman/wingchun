@@ -15,7 +15,11 @@ var responses = {
 						"Is this a matter of syntax?",
 						"Let's change focus a bit... Tell me about what you're trying to do.",
 						"If * isn't the problem, might it be something else?",
-						"Tell me more about *?"
+						"Tell me more about *?",
+						"Is there some value you could track that would help you?",
+						"Is there some method or function you could create?  What would it be?",
+						"Are you okay, or are you feeling stressed out, confused, or stuck? Which is it?"
+
 					]
 				},
 	"sorry" : {
@@ -32,7 +36,7 @@ var responses = {
 				 "responses" : ["You don't seem very certain.", "Is there a way you can become more 'sure?'"]},
 	"i think" : {
 				 "weight" : 2,
-				 "responses" : ["Do you really think so?", "What else can you think of?", "If that weren't correct, what else could it be?", "But, might there be another way?"]},
+				 "responses" : ["Do you really think so?", "What else can you think of?", "If that weren't correct, what else could it be?", "But, might there be another way?", "Bruce Lee once said \"If you spend too much time thinking aout a thing, you'll never get it done.\""]},
 	"you" : {
 				 "weight" : 1,
 				 "responses" : ["We were discussing you, not me.","Why do you say that about me?","Why do you care whether I \"*\"?", "I'm here for you."]},
@@ -150,7 +154,7 @@ var responses = {
 				 "responses" : ["What would it mean to you if you got it?","Why do you want it?","What if it didn't work?"]},
 	"i wanted" : {
 				 "weight" : 1,
-				 "responses" : ["Did you achieve it or simply moved on?"]},
+				 "responses" : ["Did you achieve it or simply moved on?", "Bruce Lee has said \"Absorb what is useful, discard what is useless and add what is specifically your own.\""]},
 	"i aimed" : {
 					"weight" : 1,
 					"responses" : ["Did you achieve it, or did you miss??"]},
@@ -163,7 +167,7 @@ var responses = {
 			},
 	"i am confused" : {
 				"weight" : 6,
-				"responses" : ["Do any of these words seem like threads to unravel your confusion... \"compare, combine, call, track, set, assign, sort, swap, sample, return, iterate, create, return, replace\"?"]
+				"responses" : ["Bruce Lee has said \"A wise man can learn more from a foolish question than a fool can learn from a wise answer.\"", "Do any of these words seem like threads to unravel your confusion... \"compare, combine, call, track, set, assign, sort, swap, sample, return, iterate, create, return, replace\"?"]
 			},
 	"i am lost" : {
 				"weight" : 6,
@@ -171,7 +175,7 @@ var responses = {
 			},
 	"i am stressed" : {
 				"weight" : 6,
-				"responses" : ["That's okay, we'll work together to overcome the obstacle.", "It's good to admit that, it'll make it easier to grow from there."]
+				"responses" : ["Enjoy this quote by Bruce Lee:\"You must be shapeless, formless, like water. When you pour water in a cup, it becomes the cup. When you pour water in a bottle, it becomes the bottle. When you pour water in a teapot, it becomes the teapot. Water can drip and it can crash. Become like water my friend.\"","That's okay, we'll work together to overcome the obstacle.", "It's good to admit that, it'll make it easier to grow from there.", "Bruce Lee once said \"Do not pray for an easy life, pray for the strength to endure a difficult one.\""]
 			},
 	"i need help" : {
 				"weight" : 6,
@@ -179,7 +183,7 @@ var responses = {
 			},
 	"i don't know" : {
 				"weight" : 6,
-				"responses" : ["You at least know \"*\"", "Look harder.", "Try harder.", "Tell me more about the code."]
+				"responses" : ["Bruce Lee says \"Knowing is not enough, we must apply. Willing is not enough, we must do.\"", "Bruce Lee says \"Mistakes are always forgivable, if one has the courage to admit them.\"","You at least know \"*\"", "Look harder.", "Try harder.", "Tell me more about the code."]
 			},
 	"i am unsure" : {
 		"weight" : 6,
@@ -272,9 +276,9 @@ var responsesWithWildcard = {
 						weight : 20,
 						replacementWord : "i don't know"
 					},	
-	"I *1-3* clue" : {	
+	"I am *1-3* stuck" : {	
 						weight : 20,
-						replacementWord : "i don't know"
+						replacementWord : "i am stressed"
 					},
 	"use *1-3* loop" : {	
 						weight : 20,
