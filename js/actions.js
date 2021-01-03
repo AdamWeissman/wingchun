@@ -21,13 +21,13 @@ function getUserInput(){
 	var inputFromUser = $(".send-textbox").val();
 
 	if(inputFromUser == null || inputFromUser != null && inputFromUser.length == 0){
-		error("Error: Input cannot be blank");
-	}else if(inputFromUser == "run demo1"){
-		runDemo1();
-		clearSendTextbox();
-	}else if(inputFromUser == "run demo2"){
-		runDemo2();
-		clearSendTextbox();
+		errorSendTextbox();
+	// }else if(inputFromUser == "run demo1"){
+	// 	runDemo1();
+	// 	clearSendTextbox();
+	// }else if(inputFromUser == "run demo2"){
+	// 	runDemo2();
+	// 	clearSendTextbox();
 	}else{
 		sendElizaNewMessage(inputFromUser);
 	}
@@ -85,6 +85,11 @@ function getUserMessageHTML(message){
 /*
  * Empty user send textbox
  */
+
+function errorSendTextbox(){
+	$(".send-textbox").val('you need to type something in here');
+}
+
 function clearSendTextbox(){
 	$(".send-textbox").val('');
 }

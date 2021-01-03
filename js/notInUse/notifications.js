@@ -21,7 +21,7 @@ $(document).ready(function(){
 		for(var i = 0;i < currentNotifications.length;i++){
 			var currentNotification = currentNotifications[i];
 
-			refershNotifications();
+			refreshNotifications();
 		}
 	}, 1000);
 });
@@ -73,7 +73,7 @@ function createNotification(message, type, seconds){
  * Subtracts the cycles (1 second a cycle), if 0
  * hides the notification.
  */
-function refershNotifications(){
+function refreshhNotifications(){
 	var html = '';
 	for(var i = 0;i < currentNotifications.length;i++){
 
@@ -106,3 +106,14 @@ function refershNotifications(){
 	
 	$("#notification-area").html(html);
 }
+
+// function printResponses(){
+// 	for (var word in responses) {
+// 		if (responses.hasOwnProperty(word)) {
+// 			console.log(word);
+// 			for(var i = 0;i < responses[word].length;i++){
+// 				console.log("    " + responses[word][i]);
+// 			}
+// 		}
+// 	}
+// }

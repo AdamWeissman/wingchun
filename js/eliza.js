@@ -214,18 +214,22 @@ var synonyms = {
  * "happy"
  */
 var responsesWithWildcard = {
-	"i am *1-3* happy" : {	
+	"i am *1-3* confused" : {	
 							weight : 20,
-							replacementWord : "i am happy"
+							replacementWord : "i am confused"
 						},
-	"i am *1-3* sad" : {	
+	"i am *1-3* stressed" : {	
 							weight : 20,
-							replacementWord : "i am sad"
+							replacementWord : "i am stressed"
 						},
-	"i am *1-3* bored" : {	
+	"i am *1-3* frustrated" : {	
 							weight : 20,
-							replacementWord : "i am bored"
-						}
+							replacementWord : "i am frustrated"
+						},
+	"i am *1-3* lost" : {	
+							weight : 20,
+							replacementWord : "i am lost"
+						},					
 	
 };
 
@@ -520,6 +524,8 @@ function processInput(message){
 function replaceWords(input){
 	
 	var wordsForReplacement = [];
+	wordsForReplacement["i'm"] = "you are";
+	wordsForReplacement["sort of"] = "sorta";
 	wordsForReplacement["i"] = "you";
 	wordsForReplacement["you"] = "i";
 	wordsForReplacement["me"] = "you";
