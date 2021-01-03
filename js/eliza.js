@@ -510,8 +510,8 @@ function selectResponse(word){
  * and remove unnessary punctuation. 
  */
 function processInput(message){
-	message = message.toLowerCase();
 	message = removePunctuation(message);
+	message = message.toLowerCase();
 	return message;
 }
 /*
@@ -579,6 +579,7 @@ function replaceWords(input){
  */
 function removePunctuation(message){
 	//',;.?!:'
+	message = message.replace("sort of", "sorta")
 	message = message.replace(",","");
 	message = message.replace(";","");
 	message = message.replace(".","");
