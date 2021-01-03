@@ -146,18 +146,26 @@ var responses = {
 	"i desired" : {
 				 "weight" : 1,
 				 "responses" : ["Did you achieve it or simply moved on?"]},
-	"i am sad" : {
-				"weight" : 1,
+	"i am frustrated" : {
+				"weight" : 6,
 				"responses" : ["Sorry to hear you are. Tell me about it."]
 			},
-	"i am happy" : {
-				"weight" : 1,
+	"i am confused" : {
+				"weight" : 6,
 				"responses" : ["That's good. What is making you happy?"]
 			},
-	"i am bored" : {
-				"weight" : 1,
-				"responses" : ["What makes you bored?"]
-			}
+	"i am lost" : {
+				"weight" : 6,
+				"responses" : ["We'll sort it out."]
+			},
+	"i am stressed" : {
+				"weight" : 6,
+				"responses" : ["That's okay, we'll work together to overcome the obstacle.", "It's good to admit that, it'll make it easier to grow from there."]
+			},
+	"i need help" : {
+				"weight" : 6,
+				"responses" : ["Let's work together.", "The answer is within yourself, it's just a matter of finding it.", "What in particular do you need help on?", "Thank you for letting me know, tell me about the problem.", "Great! Tell me what you're working on."]
+			},
 
 	
 };
@@ -229,7 +237,15 @@ var responsesWithWildcard = {
 	"i am *1-3* lost" : {	
 							weight : 20,
 							replacementWord : "i am lost"
-						},					
+						},
+	"i *1-3* help" : {	
+							weight : 20,
+							replacementWord : "i need help"
+						},
+	"can *1-3* help" : {	
+							weight : 20,
+							replacementWord : "i need help"
+						},
 	
 };
 
@@ -299,7 +315,6 @@ function getKeywordsByWeight(){
 		}
 	}
 
-	
 	//Add similar words
 	for(var wordWithResponse in synonyms){
 		if(wordWithResponse in tempKeywords){
