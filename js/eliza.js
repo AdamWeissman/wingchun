@@ -101,6 +101,13 @@ var responses = {
 	"goodbye" : {
 				 "weight" : 1,
 				 "responses" : ["Goodbye.  Thank you for talking to me."]},
+	"advice" : {
+		"weight" : 8,
+		"responses" : ["Check out my blog with <a href=\"https://comedytragedyepic.com/learning-advice/\" target=\"_blank\">Learning Advice</a>",
+			"I'm a big fan of the <a href=\"https://kanbanize.com/lean-management/improvement/5-whys-analysis-tool\" target=\"_blank\">Five Whys</a>.",
+			"You might enjoy the <a href=\"https://www.tocinstitute.org/five-focusing-steps.html\" target=\"_blank\">Theory of Constraints</a>.",
+			"You may enjoy discovering how to reframe your learning with <a href=\"https://barbaraoakley.com/\" target=\"_blank\">Barbara Oakley, PhD</a>.",
+			]},
 	"i need" : {
 				 "weight" : 5,
 				 "responses" : ["Why do you need *?","Would it really help you to get *?","Are you sure you need *?"],},
