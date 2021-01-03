@@ -1,20 +1,17 @@
 # WHAT IS WING CHUN, AND WHY I CHOSE IT FOR MY "TAKE" ON ELIZA (see more about Eliza in the STANDING ON THE SHOULDERS OF GIANTS section below)
 
-If you've ever seen Ip Man, (or most Kung Fu movies) you'll often see the hero or heroine training with a Wing Chun dummy... the wooden pole with a few "arms" sticking out.  It is immovable, forcing the practioner to adapt to it; similar to how a coder must adapt to the interpreter or compiler they're dealing with... or whatever constraints they are working around, whether constraits imposed from outside (by technology, a client, or otherwise), or constraints from within: what one is capable of.
+If you've ever seen Ip Man, (or most Kung Fu movies) you'll often see the hero or heroine training with a Wing Chun dummy; the wooden pole with a few "arms" sticking out.  It is immovable, forcing the practioner to adapt to it; similar to how a coder must adapt to the interpreter or compiler they're dealing with or whatever constraints they must navigate.  Whether constraits imposed from outside (by technology, a client, or otherwise), or constraints from within: what one is capable of.
 
-At face value, the Eliza chatbot might be reduced to "verbal judo" as it rephrases one's statement into a question.  But, one might also view the Eliza chatbot in the same light as a Wing Chun dummy -- as a fixed object which one must conform/adhere to in order to attain some victory.  By analogy, this quote by Bruce Lee gives some idea of how you might approach practice against something like a Wing Chun dummy:
+In the context of martial arts, the Eliza chatbot might be viewed as a form of "verbal judo" as it frequently rephrases one's statements into a question.  Bridging the concept of the Eliza Chatbot and what I'm attempting with my "Wing Chun" version is __a chatbot that will help coders more quickly recognize the constraints of a problem.__ 
+
+As a teaching coach, and forever student, I've found that one of the biggest obstacles to achieving anything is getting stuck in a fixed mindset, getting lost in the details of the wrong problem.  To that end I find the following quote by Bruce Lee aspirational:
 
 > "Empty your mind; be formless, shapeless – like water. Now you put 
 > water into a cup, it becomes the cup, you put water into a bottle, it 
-> becomes the bottle, you put it in a teapot, it becomes the teapot. Now > water can flow or it can crash. Be water, my friend."
+> becomes the bottle, you put it in a teapot, it becomes the teapot. Now 
+> water can flow or it can crash. Be water, my friend."
 
-In other words, as one who codes, and in my current position as a Teaching Coach (as of January 2nd, 2021), I find that one of the most harmful mindsets for the novice coder (and even the adept) is the idea that something we did "should work" ... 
-
-However, embracing the idea, that if something does not work, then it also SHOULD NOT, has been a game changer for me.  With this "Wing Chun" implementation/spin on the Eliza bot, my hope is for coders to go beyond "rubber ducking" and approach code in such a way that it could be considered an extension of one's approach to problem solving in life.
-
-There is too much to cover here in terms of philosophy, though I can often be found on LinkedIn to chat: https://www.linkedin.com/in/adweissman/
-
-In the spirit of the "fixed arms" on a Wing Chun dummy, I keep a notecard beside my computer monitor that I have found helpful when tackling coding challenges.  On that note card I have the following words, words that serve as reminders to the most basic constraints of what one can do with code:
+In other words, my ultimate goal for this chatbot is to serve as a "pattern interrupt" that will help the user stay "fluid".  To do that, the "arms" of my Wing Chun Dummy represent that most common constraints I've found helpful when tackling coding challenges; what follows is a list of words that I have on a notecard beside my computer monitor; they serve as fundamental building blocks of most any coding challenge, and reflecting on where one might come in handy or not, often serves as a creative spring board that allows me to "be like water" when facing a coding challenge.  The "arms" of my Wing Chun dummy are:
 
 1) Compare
 2) Combine
@@ -29,7 +26,6 @@ In the spirit of the "fixed arms" on a Wing Chun dummy, I keep a notecard beside
 11) Create
 12) Iterate
 
-Lastly, I've attempted to spin Eliza into something that more closely resembles the Socratic Method in the context of The Five Whys, or as adapted by Eliyahu Goldratt with his Theory of Constraints.
 
 ## MORE RESOURCES ON WING CHUN
 * https://www.dragoninst.com/blog/what-is-the-wooden-dummy-for/

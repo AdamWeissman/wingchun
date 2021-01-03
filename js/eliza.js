@@ -308,12 +308,12 @@ function getKeywordsByWeight(){
 	for(var responseKeyword in responses){
 		var weight = responses[responseKeyword].weight;
 		tempKeywords[responseKeyword] = weight;
-		console.log("line 310", tempKeywords[responseKeyword])
-		console.log("tempKeywords Array", tempKeywords)
+		// console.log("line 310", tempKeywords[responseKeyword])
+		// console.log("tempKeywords Array", tempKeywords)
 
 		if(!weights.includes(weight)){
 			weights.push(weight);
-			console.log('weights array', weights)
+			// console.log('weights array', weights)
 		}
 	}
 
@@ -321,12 +321,12 @@ function getKeywordsByWeight(){
 	for(var wordWithResponse in synonyms){
 		if(wordWithResponse in tempKeywords){
 			var weight = tempKeywords[wordWithResponse];
-			console.log("synonyms", weight)
+			// console.log("synonyms", weight)
 
 			for(var i = 0;i < synonyms[wordWithResponse].length;i++){
 				var similarWord = synonyms[wordWithResponse][i];
 				tempKeywords[similarWord] = weight;
-				console.log("line 329", tempKeywords[similarWord])
+				// console.log("line 329", tempKeywords[similarWord])
 			}
 		}//otherwise ignores it
 	}
@@ -338,7 +338,7 @@ function getKeywordsByWeight(){
 
 		if(!weights.includes(weight)){
 			weights.push(weight);
-			console.log("weights", weights);
+			// console.log("weights", weights);
 		}
 		
 		tempKeywords[word] = weight;
@@ -346,7 +346,7 @@ function getKeywordsByWeight(){
 
 	//Sorts them based on weight going from highest to lowest
 	weights = weights.sort(sortNumber);
-	console.log("sorted weights", weights)
+	// console.log("sorted weights", weights)
 	
 	//Populates keywords for final result to be used throughout
 	for(var i = 0;i < weights.length;i++){
@@ -360,10 +360,11 @@ function getKeywordsByWeight(){
 				obj.weight = weight;
 
 				keywords.push(obj);
-				console.log(keywords)
+				// console.log(keywords)
 			}
 		}
 	}
+	console.log(keywords)
 }
 /*
  * SendElizaNewMessage is a function used for a one input, and one response
@@ -374,6 +375,7 @@ function sendElizaNewMessage(newMessage){
 	
 	//Add to UI
 	chatHistory.push({ isEliza : false, content : newMessage });
+	console.log(chatHistory)
 	displayChat();
 	clearSendTextbox();
 
@@ -390,6 +392,7 @@ function sendElizaNewMessage(newMessage){
 	//random short time to response. Reloads the chat.
 	setTimeout(function(){
 		usedResponses.push(response);
+		console.log(usedResponses)
 		chatHistory.push({ isEliza : true, content : response });
 		displayChat();
 	}, determineResponseTime());
