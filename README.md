@@ -1,4 +1,4 @@
-# WHAT IS WING CHUN, AND WHY I CHOSE IT FOR MY "TAKE" ON ELIZA (see more about Eliza in the STANDING ON THE SHOULDERS OF GIANTS section below)
+## WHAT IS WING CHUN, AND WHY I CHOSE IT FOR MY "TAKE" ON ELIZA (see more about Eliza in the STANDING ON THE SHOULDERS OF GIANTS section below)
 
 If you've ever seen Ip Man, (or most Kung Fu movies) you'll often see the hero or heroine training with a Wing Chun dummy; the wooden pole with a few "arms" sticking out.  It is immovable, forcing the practioner to adapt to it; similar to how a coder must adapt to the interpreter or compiler they're dealing with or whatever constraints they must navigate.  Whether constraits imposed from outside (by technology, a client, or otherwise), or constraints from within: what one is capable of.
 
@@ -33,11 +33,11 @@ In other words, my ultimate goal for this chatbot is to serve as a "pattern inte
 * VIDEO https://youtu.be/GZTcDm-MGDo from Dynatsy MMA
 * VIDEO https://youtu.be/NL4OJzlc9dw Donnie Yen training for Ip Man Movie
 
-# VISIT THE CUSTOM IMPLEMENTATION HERE
+## VISIT THE CUSTOM IMPLEMENTATION HERE
 
 https://adamweissman.github.io/wingchun/
 
-# STANDING ON THE SHOULDERS OF GIANTS - THE TECHNICAL ASPECTS OF THIS PROJECT ARE LARGELY UN-ORIGINAL
+## STANDING ON THE SHOULDERS OF GIANTS - THE TECHNICAL ASPECTS OF THIS PROJECT ARE LARGELY UN-ORIGINAL
 
 ### What I did NOT create?
 
@@ -50,7 +50,7 @@ https://adamweissman.github.io/wingchun/
 
 ### What I DID create?
 
-  * custom responses that go beyond "rubber ducking"
+  * custom responses that go beyond "rubber ducking" __AN EPIC NUMBER OF RESPONSES__.
 	* While working on coding challenges upon graduation Flatiron Software Engineering School, I often attempt to find a "better" way to solve a problem than how I do the first time around, always with a goal of finding what is not only essential but what generalizes.  I have blogged about many of my experiences and approaches here, constantly refactoring for self improvement: https://comedytragedyepic.com/learning-advice/  
 	* Perhaps the two approaches most relevant to what I'm attempting here, with "Wing Chun", can be read in my blog post: A Recursive Approach to Problem Solving: https://comedytragedyepic.com/a-recursive-approach-to-problem-solving/ and the note card that I keep beside my computer desk which is covered in the intro section.
 
