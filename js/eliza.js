@@ -46,7 +46,7 @@ var responses = {
 				},
 	"no" : {
 				 "weight" : 1,
-				 "responses" : ["Why not?","Are you sure?","What might be another way?"]},
+				 "responses" : ["Why not?","Are you sure?","What might be another way?", "Maybe you need to try harder?", "Things will only be as difficult as you make them.", "Perhaps you ought to try to reframe your way of looking at things?"]},
 	"i am" : {
 				 "weight" : 1,
 				 "responses" : ["I am sorry to hear you are *.","How long have you been *?","Is that typical?","Do you enjoy being *?","Be mindful of your mindset."]},
