@@ -1,45 +1,42 @@
-
 .send-wrapper{
 	position: fixed;
 	bottom: 0px;
-
+	
 	/* center the element */
 	right: 0;
 	left: 0;
-	clip-path: ellipse(49% 150% at 50% 150%);
+	margin-right: auto;
+	margin-left: auto;
+
+}
+
 	/* transform: skewY(40%); */
 	/* opacity: 95%; */
 	/* margin-right: auto;
 	margin-left: auto; */
 	/* border-radius: 100px; */
+
+	/* transform: scaleZ(45deg); */
 	/* -webkit-animation: neonBlueOuter 1.3s ease-in-out infinite alternate;
   -moz-animation: neonBlueOuter 1.3s ease-in-out infinite alternate;
 	animation: neonBlueOuter 1.3s ease-in-out infinite alternate; */
-}
+
 
 
 .send-inner-wrapper{
+	/* position: relative; */
 	padding-bottom: 10px;
 	padding-top: 5px;
-	color: #ffffff;
+	color: white;
 	-webkit-animation: neonBlue 1.3s ease-in-out infinite alternate;
   -moz-animation: neonBlue 1.3s ease-in-out infinite alternate;
   animation: neonBlue 1.3s ease-in-out infinite alternate;
-
   font-family: Audiowide;
-	/* border-top-color: #ffffff;
-	border-top-style: solid; */
-	
-
-
 }
-
-
 
 
 @-webkit-keyframes 
 neonBlue {
-	
 
   from {
 		clip-path: ellipse(49% 150% at 50% 150%);
@@ -132,5 +129,4 @@ neonBlueOuter {
 	padding-top: 10px;
 	font-size: 12px;
 	font-family: 'Source Sans Pro', sans-serif;
-
 }
