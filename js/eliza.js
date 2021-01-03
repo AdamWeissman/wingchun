@@ -287,7 +287,6 @@ function startElizaChat(){
 	//sorts keywords (keywords and similar word) into array based on weight.
 	getKeywordsByWeight();
 
-
 	var initialMessage = initialMessages[Math.floor(Math.random()*initialMessages.length)];
 	chatHistory.push({ isEliza : true, content : initialMessage });
 	displayChat();
@@ -309,9 +308,12 @@ function getKeywordsByWeight(){
 	for(var responseKeyword in responses){
 		var weight = responses[responseKeyword].weight;
 		tempKeywords[responseKeyword] = weight;
+		console.log("line 310", tempKeywords[responseKeyword])
+		console.log("tempKeywords Array", tempKeywords)
 
 		if(!weights.includes(weight)){
 			weights.push(weight);
+			console.log('weights array', weights)
 		}
 	}
 
@@ -319,10 +321,12 @@ function getKeywordsByWeight(){
 	for(var wordWithResponse in synonyms){
 		if(wordWithResponse in tempKeywords){
 			var weight = tempKeywords[wordWithResponse];
+			console.log("synonyms", weight)
 
 			for(var i = 0;i < synonyms[wordWithResponse].length;i++){
 				var similarWord = synonyms[wordWithResponse][i];
 				tempKeywords[similarWord] = weight;
+				console.log("line 329", tempKeywords[similarWord])
 			}
 		}//otherwise ignores it
 	}
@@ -330,9 +334,11 @@ function getKeywordsByWeight(){
 	//Adds responsesWithWildcard
 	for(var word in responsesWithWildcard){
 		var weight = responsesWithWildcard[word].weight;
+		console.log("weight", weight)
 
 		if(!weights.includes(weight)){
 			weights.push(weight);
+			console.log("weights", weights);
 		}
 		
 		tempKeywords[word] = weight;
@@ -340,6 +346,7 @@ function getKeywordsByWeight(){
 
 	//Sorts them based on weight going from highest to lowest
 	weights = weights.sort(sortNumber);
+	console.log("sorted weights", weights)
 	
 	//Populates keywords for final result to be used throughout
 	for(var i = 0;i < weights.length;i++){
@@ -353,6 +360,7 @@ function getKeywordsByWeight(){
 				obj.weight = weight;
 
 				keywords.push(obj);
+				console.log(keywords)
 			}
 		}
 	}
