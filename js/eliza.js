@@ -14,7 +14,7 @@ var responses = {
 						"Is the obstacle one of syntax or is it conceptual?",
 						"Is this a matter of syntax?",
 						"Let's change focus a bit... Tell me about what you're trying to do.",
-						"If * isn't the problem, might it be something else?",
+						"If that isn't the problem, might it be something else?",
 						"Tell me more about *?",
 						"Is there some value you could track that would help you?",
 						"Is there some method or function you could create?  What would it be?",
