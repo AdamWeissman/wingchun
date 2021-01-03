@@ -6,6 +6,7 @@ var responses = {
 						"Do you understand your current code?",
 						"I'm not sure I understand you fully.",
 						"Can you elaborate on *?",
+						"What do you want to do?",
 						"Is the obstacle one of syntax or is it conceptual?",
 						"Is this a matter of syntax?",
 						"Let's change focus a bit... Tell me about what you're trying to do.",
@@ -24,68 +25,68 @@ var responses = {
 				 "responses" : ["Is that the real reason?", "Do you mean because \"*\"", "What other causes might there be?", "What else are we missing?"]},
 	"maybe" : {
 				 "weight" : 1,
-				 "responses" : ["You  don't seem very certain."]},
+				 "responses" : ["You don't seem very certain.", "Is there a way you can become more 'sure?'"]},
 	"i think" : {
 				 "weight" : 2,
-				 "responses" : ["Do you really think so?"]},
+				 "responses" : ["Do you really think so?", "What else can you think of?", "If that weren't correct, what else could it be?", "But, might there be another way?"]},
 	"you" : {
 				 "weight" : 1,
-				 "responses" : ["We were discussing you, not me.","Why do you say that about me?","Why do you care whether I \"*\"?"]},
+				 "responses" : ["We were discussing you, not me.","Why do you say that about me?","Why do you care whether I \"*\"?", "I'm here for you."]},
 	"yes" : {
 				 "weight" : 1,
-				 "responses" : ["Why do you think so?","You seem quite positive."]
+				 "responses" : ["Why do you think so?","You seem quite positive.","Nice, let's move forward from there."]
 				},
 	"no" : {
 				 "weight" : 1,
-				 "responses" : ["Why not?","Are you sure?"]},
+				 "responses" : ["Why not?","Are you sure?","What might be another way?"]},
 	"i am" : {
 				 "weight" : 1,
-				 "responses" : ["I am sorry to hear you are *.","How long have you been *?","Do you believe it is normal to be *?","Do you enjoy being *?","Did you come to me because you are *?"]},
+				 "responses" : ["I am sorry to hear you are *.","How long have you been *?","Is that typical?","Do you enjoy being *?","Be mindful of your mindset."]},
 	"i feel" : {
 				 "weight" : 4,
-				 "responses" : ["Tell me more about such feelings.","Do you often feel *?","Do you enjoy feeling *?","Why do you feel that way?"]},
+				 "responses" : ["Tell me more about such feelings.","Is feeling * helpful?","Does feeling * bring you closer to the goal?","Why do you feel that way?"]},
 	"code" : {
 				 "weight" : 16,
 				 "responses" : ["Tell me more about your code.","Is there some value you can call, combine, set or assign?","Might you iterate, track, or create some variable?"]},
 	"compare" : {
 				 "weight" : 16,
 				 "responses" : ["Tell me more about the code.","What are you comparing? To what?","If you're going to be comparing values, might you need to track something as well?", "If you're comparing such and such values, is there anything you need to replace, or swap?"]},
-	"father" : {
+	"combine" : {
 				 "weight" : 16,
-				 "responses" : ["Tell me more about your family.","How do you get along with your family?","Is your family important to you?"]},
-	"mom" : {
+				 "responses" : ["Do you need to return some other value?","If you combine *, should you also be tracking it?","Do you then also need to compare or replace anything?", "Do you then need to create a new value?"]},
+	"call" : {
 				 "weight" : 16,
-				 "responses" : ["Tell me more about your family.","How do you get along with your family?","Is your family important to you?"]},
-	"sister" : {
+				 "responses" : ["In what scope does that make sense?","In what context would you do that?","Have you considered creating some variable to store the return?", "But what will you return?"]},
+	"track" : {
 				 "weight" : 16,
-				 "responses" : ["Tell me more about your family.","How do you get along with your family?","Is your family important to you?"]},
-	"brother" : {
+				 "responses" : ["If you're tracking *, do you need to do anything else?","When will you return what you track?","Do you need to swap, sort, set, return or replace anything while you're doing this?"]},
+	"iterate" : {
 				 "weight" : 16,
-				 "responses" : ["Tell me more about your family.","How do you get along with your family?","Is your family important to you?"]},
-	"husband" : {
+				 "responses" : ["What type of loop will you be using?","Can you do this recursively?","Are there any disadvantages to doing it this way?", "Is there a simpler approach?", "What's the easiest way to do this?", "What do you need to keep track of?", "What are your returns?"]},
+	"create" : {
 				 "weight" : 16,
-				 "responses" : ["Tell me more about your family.","How do you get along with your family?","Is your family important to you?"]},
-	"wife" : {
+				 "responses" : ["Is it necessary to create it, might you just swap or replace?","Do you need to set any values?","Do you foresee any flaws with this approach?", "What's the most optimal way to do this?", "What's the bad way to do this?"]},
+	"assign" : {
 				 "weight" : 16,
-				 "responses" : ["Tell me more about your family.","How do you get along with your family?","Is your family important to you?"]},
-	"child" : {
+				 "responses" : ["Where will you get the value from?","Is that the only way?","Do you need to assign anything else?", "Should you be swapping values?"]},
+	"sort" : {
 				 "weight" : 16,
-				 "responses" : ["Did you have close friends as a child?","What is your favorite childhood memory?","Do you remember any dreams or nightmares from childhood?","Did the other children sometimes tease you?","How do you think your childhood experiences relate to your feelings today?"]},
-	"dreamed" : {
-				 "weight" : 4,
-				 "responses" : ["What does that dream suggest to you?","Do you dream often?","What people appear in your dreams?","Are you disturbed by your dreams?","Have you ever fantasized * while you were awake?"]},
-	"nightmare" : {
-				 "weight" : 3,
-				 "responses" : ["What does that dream suggest to you?","Do you dream often?","What persons appear in your dreams?","Are you disturbed by your dreams?"]},
+				 "responses" : ["Will you use a built-in??","Do you know the syntax?","Are there many ways to do this?"]},
+	"swap" : {
+				 "weight" : 16,
+				 "responses" : ["What valuess are you tracking here?", "Do you know how you will code it?"]},
+	"sample" : {
+				 "weight" : 16,
+				 "responses" : ["Will you be using a sliding window?","Will you be using pointers?","What can you do with it?"]},
 	"hello" : {
 				 "weight" : 1,
 				 "responses" : ["Hi again! How is going?","How are you today? Any problems?"]},
-	"good afternoon" : {
-				 "weight" : 1,
-				 "responses" : ["Hi again! How is going?","How are you today? Any problems?"]},
-	"good morning" : {
-				 "weight" : 1,
-				 "responses" : ["Hi again! How is going?","How are you today? Any problems?"]},
+	"return" : {
+				 "weight" : 16,
+				 "responses" : ["Are you pretty cognizant of the scope?","Will you pass by reference or value?"]},
+	"replace" : {
+				 "weight" : 16,
+				 "responses" : ["Is it okay to do that?","What else might you do?", "Is this efficient?"]},
 	"hi" : {
 				 "weight" : 1,
 				 "responses" : ["Hi again! How is going?","How are you today? Any problems?"]},
@@ -140,12 +141,18 @@ var responses = {
 	"was you" : {
 				 "weight" : 2,
 				 "responses" : ["Would you like to believe I was *?","What suggests that I was *?","What do you think?"]},
-	"i desire" : {
+	"i want" : {
 				 "weight" : 1,
-				 "responses" : ["What would it mean to you if you got it?","Why do you want it?","What if you never got it?"]},
-	"i desired" : {
+				 "responses" : ["What would it mean to you if you got it?","Why do you want it?","What if it didn't work?"]},
+	"i wanted" : {
 				 "weight" : 1,
 				 "responses" : ["Did you achieve it or simply moved on?"]},
+	"i aimed" : {
+					"weight" : 1,
+					"responses" : ["Did you achieve it, or did you miss??"]},
+	"i tried" : {
+						"weight" : 1,
+						"responses" : ["What else did you try?"]},
 	"i am frustrated" : {
 				"weight" : 6,
 				"responses" : ["Sorry to hear you are frustrated. We're only human", "Step back for a moment, clear your mind.", "What can we work on to become unfrustrated?"]
@@ -156,7 +163,7 @@ var responses = {
 			},
 	"i am lost" : {
 				"weight" : 6,
-				"responses" : ["We'll sort it out.", "Being lost is the first place we must start in order find where we're going."]
+				"responses" : ["We'll sort it out.", "Being lost is the first place we must start in order find where we're going.", "What have you tried so far?"]
 			},
 	"i am stressed" : {
 				"weight" : 6,
@@ -265,6 +272,10 @@ var responsesWithWildcard = {
 						weight : 20,
 						replacementWord : "i don't know"
 					},
+	"use *1-3* loop" : {	
+						weight : 20,
+						replacementWord : "iterate"
+					}
 	
 };
 
