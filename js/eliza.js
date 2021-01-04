@@ -5,9 +5,10 @@ var responses = {
 						"Do you understand what the code you have does?",
 						"Do you understand your current code?",
 						"I'm not sure I understand you fully.",
-						"Can you elaborate on \"*\"?",
+						"Can you elaborate on that?",
 						"What do you want to do?",
 						"What is the goal?",
+						"Why?",
 						"What are some obstacles?",
 						"Do you know the solution, yet lack execution?",
 						"Do you know what you want to do, but are uncertain of the approach?",
@@ -15,44 +16,146 @@ var responses = {
 						"Is this a matter of syntax?",
 						"Let's change focus a bit... Tell me about what you're trying to do.",
 						"If that isn't the problem, might it be something else?",
-						"Tell me more about *?",
+						"Tell me more about it.",
 						"Is there some value you could track that would help you?",
-						"Is there some method or function you could create?  What would it be?",
-						"Are you okay, or are you feeling stressed out, confused, or stuck? Which is it?"
-
+						"Is there some method or function you could create?",
+						"How do you feel about this?"
 					]
 				},
+	"this": {
+		"weight" : 1,
+		"responses" : ["Why?", "What's the purpose?"]
+	},
+	"get": {
+		"weight" : 1,
+		"responses" : ["Why?", "What's the value?"]
+	},
+	"you" : {
+					"weight" : 1,
+					"responses" : ["We were discussing you, not me.","Why do you say that about me?", "I'm here for you."]},
+	"yes" : {
+					"weight" : 1,
+					"responses" : ["Why do you think so?","You seem quite positive.","Nice, let's move forward from there."]},
+	"no" : {
+					"weight" : 1,
+					"responses" : ["Why not?","Are you sure?","What might be another way?", "Maybe you need to try harder?", "Things will only be as difficult as you make them.", "Perhaps you ought to try to reframe your way of looking at things?"]},
+	"i am" : {
+					"weight" : 1,
+					"responses" : ["I am sorry to hear that.","How long has that been?","Is that typical?","Be mindful of your mindset."]},
 	"sorry" : {
 				 "weight" : 1,
 				 "responses" : ["Please don't apologize.", "Apologies are not necessary.", "Apologies are not required."]},
 	"always" : {
 				 "weight" : 1,
 				 "responses" : ["Can you think of a specific example?"]},
-	"because" : {
-				 "weight" : 6,
-				 "responses" : ["Is that the real reason?", "Do you mean because \"*\"", "What other causes might there be?", "What else are we missing?"]},
 	"maybe" : {
-				 "weight" : 1,
-				 "responses" : ["You don't seem very certain.", "Is there a way you can become more 'sure?'"]},
+					"weight" : 1,
+					"responses" : ["You don't seem very certain.", "Is there a way you can become more 'sure?'"]},
+	"hello" : {
+					"weight" : 1,
+					"responses" : ["Hi again! How is going?","How are you today? Any problems?"]},
+	"hi" : {
+					"weight" : 1,
+					"responses" : ["Hi again! How is going?","How are you today? Any problems?"]},
+	"goodbye" : {
+					"weight" : 1,
+					"responses" : ["Goodbye.  Thank you for talking to me."]},
+	"perhaps" : {
+					"weight" : 1,
+					"responses" : ["How do you know you can't ?","Perhaps you could if you tried.","What would it take for you to accomplish that?"]},
+	"another language" : {
+					 "weight" : 1,
+					 "responses" : ["I told you before, I don't understand languages that are not English."]},
+	"are" : {
+					"weight" : 1,
+					"responses" : ["Did you think they might not be?","Would you like it if they were not?","What if they were not?","Possibly they are."]},
+	"your" : {
+					"weight" : 1,
+					"responses" : ["Why are you concerned about it?","What about your own issue?","Are you worried about someone else?","Really?"]},
+	"i want" : {
+					"weight" : 1,
+					"responses" : ["What would it mean to you if you got it?","Why do you want it?","What if it didn't work?"]},
+	"i wanted" : {
+					"weight" : 1,
+					"responses" : ["Did you achieve it or simply moved on?", "Bruce Lee has said \"Absorb what is useful, discard what is useless and add what is specifically your own.\""]},
+	"i aimed" : {
+					"weight" : 1,
+					"responses" : ["Did you achieve it, or did you miss??"]},
 	"i think" : {
-				 "weight" : 2,
-				 "responses" : ["Do you really think so?", "What else can you think of?", "If that weren't correct, what else could it be?", "But, might there be another way?", "Bruce Lee once said \"If you spend too much time thinking aout a thing, you'll never get it done.\""]},
-	"you" : {
-				 "weight" : 1,
-				 "responses" : ["We were discussing you, not me.","Why do you say that about me?","Why do you care whether I \"*\"?", "I'm here for you."]},
-	"yes" : {
-				 "weight" : 1,
-				 "responses" : ["Why do you think so?","You seem quite positive.","Nice, let's move forward from there."]
-				},
-	"no" : {
-				 "weight" : 1,
-				 "responses" : ["Why not?","Are you sure?","What might be another way?", "Maybe you need to try harder?", "Things will only be as difficult as you make them.", "Perhaps you ought to try to reframe your way of looking at things?"]},
-	"i am" : {
-				 "weight" : 1,
-				 "responses" : ["I am sorry to hear you are *.","How long have you been *?","Is that typical?","Do you enjoy being *?","Be mindful of your mindset."]},
+					"weight" : 2,
+					"responses" : ["Perhaps then it is time for action?","Do you really think so?", "Truly?", "Might it be something else?", "Bruce Lee once said \"If you spend too much time thinking aout a thing, you'll never get it done.\""]},	
+	"you serious" : {
+					"weight" : 2,
+					"responses" : ["You have no idea.", "Am I??", "What do you think?"]
+	},
+	"are you" : {
+					"weight" : 2,
+					"responses" : ["Why are you interested in that?","Would you prefer that?","What do you think?"]},
+	"was i" : {
+					"weight" : 2,
+					"responses" : ["What if?","Do you think you were?","Were you?","What would it mean if you were?","What does that suggest to you?"]},
+	"was you" : {
+					"weight" : 2,
+					"responses" : ["Would you like to believe that?","What suggests that?","What do you think?"]},
+	"if" : {
+					"weight" : 3,
+					"responses" : ["Do you think it\'s likely?","What else?","What other conditions must your consider?","Really?"]},
+	"why don\'t you" : {
+					"weight" : 3,
+					"responses" : ["Do you really think I don't?","Perhaps eventually I will.","Do you really want me to?"],},
+	"why can\'t i" : {
+					"weight" : 3,
+					"responses" : ["Do you think you should be able to?","If you could, what would you do?","I don't know -- why can't you?","Have you really tried?"]},
+	"i can\'t" : {
+					"weight" : 4,
+					"responses" : ["How do you know you can't?","Perhaps you could if you tried.","What would it take for you to achieve that?"]},
 	"i feel" : {
-				 "weight" : 4,
-				 "responses" : ["Tell me more about such feelings.","Is feeling * helpful?","Does feeling * bring you closer to the goal?","Why do you feel that way?"]},
+					"weight" : 4,
+					"responses" : ["Tell me more about such feelings.","Is that helpful?","Remember we are masters of our emotions.","Why do you feel that way?"]},
+	"i need" : {
+					"weight" : 5,
+					"responses" : ["Are you sure you need to?"]},
+	"index" : {
+		"weight" : 5,
+		"responses" :  ["Do you need to assign a value to the index?", "Are you working with more than one index?"]
+	},
+	"do you remember" : {
+					"weight" : 6,
+					"responses" : ["Do you think I would forget?","Yes I do remember."]},	
+	"i am frustrated" : {
+					"weight" : 6,
+					"responses" : ["Sorry to hear you are frustrated. We're only human", "Step back for a moment, clear your mind.", "What can we work on to become unfrustrated?"]},
+	"i am confused" : {
+					"weight" : 6,
+					"responses" : ["Bruce Lee has said \"A wise man can learn more from a foolish question than a fool can learn from a wise answer.\"", "Do any of these words seem like threads to unravel your confusion... \"compare, combine, call, track, set, assign, sort, swap, sample, return, iterate, create, return, replace\"?"]},
+	"i am lost" : {
+					"weight" : 6,
+					"responses" : ["We'll sort it out.", "Being lost is the first place we must start in order find where we're going.", "What have you tried so far?"]},
+	"i am stressed" : {
+					"weight" : 6,
+					"responses" : ["Enjoy this quote by Bruce Lee:\"You must be shapeless, formless, like water. When you pour water in a cup, it becomes the cup. When you pour water in a bottle, it becomes the bottle. When you pour water in a teapot, it becomes the teapot. Water can drip and it can crash. Become like water my friend.\"","That's okay, we'll work together to overcome the obstacle.", "It's good to admit that, it'll make it easier to grow from there.", "Bruce Lee once said \"Do not pray for an easy life, pray for the strength to endure a difficult one.\""]},
+	"i need help" : {
+					"weight" : 6,
+					"responses" : ["Let's work together.", "The answer is within yourself, it's just a matter of finding it.", "What in particular do you need help on?", "Thank you for letting me know, tell me about the problem.", "Great! Tell me what you're working on."]},
+	"i don't know" : {
+					"weight" : 6,
+					"responses" : ["Bruce Lee says \"Knowing is not enough, we must apply. Willing is not enough, we must do.\"", "Bruce Lee says \"Mistakes are always forgivable, if one has the courage to admit them.\"","You at least know that you don't know.", "Look harder.", "Try harder.", "Tell me more about the code."]},
+	"i am unsure" : {
+					"weight" : 6,
+					"responses" : ["That's okay, but at least what CAN you be sure of?", "Let's make a decision and go from there.", "What's a bad solution look like?", "What do you know you can do for sure, right now?", "Is there anything can we be certain of?"]},
+	"i tried" : {
+					"weight" : 6,
+					"responses" : ["What else did you try?", "What was the result?", "Was the result what you expected?"]},
+	"because" : {
+					"weight" : 6,
+					"responses" : ["Is that the real reason?", "Can you drill down on a cause?", "What other causes might there be?", "What else are we missing?"]},
+	"advice" : {
+					"weight" : 8,
+					"responses" : ["Check out my blog with <a href=\"https://comedytragedyepic.com/learning-advice/\" target=\"_blank\">Learning Advice</a>",
+						"I'm a big fan of the <a href=\"https://kanbanize.com/lean-management/improvement/5-whys-analysis-tool\" target=\"_blank\">Five Whys</a>.",
+						"You might enjoy the <a href=\"https://www.tocinstitute.org/five-focusing-steps.html\" target=\"_blank\">Theory of Constraints</a>.",
+						"You may enjoy discovering how to reframe your learning with <a href=\"https://barbaraoakley.com/\" target=\"_blank\">Barbara Oakley, PhD</a>.",
+						]},
 	"code" : {
 				 "weight" : 16,
 				 "responses" : ["Tell me more about your code.","Is there some value you can call, combine, set or assign?","Might you iterate, track, or create some variable?"]},
@@ -61,16 +164,16 @@ var responses = {
 				 "responses" : ["Tell me more about the code.","What are you comparing? To what?","If you're going to be comparing values, might you need to track something as well?", "If you're comparing such and such values, is there anything you need to replace, or swap?"]},
 	"combine" : {
 				 "weight" : 16,
-				 "responses" : ["Do you need to return some other value?","If you combine *, should you also be tracking it?","Do you then also need to compare or replace anything?", "Do you then need to create a new value?"]},
+				 "responses" : ["Do you need to return some other value?","How will you combine it?","Do you also need to compare or replace anything?", "Do you then need to create a new value?"]},
 	"call" : {
 				 "weight" : 16,
 				 "responses" : ["In what scope does that make sense?","In what context would you do that?","Have you considered creating some variable to store the return?", "But what will you return?"]},
 	"track" : {
 				 "weight" : 16,
-				 "responses" : ["If you're tracking *, do you need to do anything else?","When will you return what you track?","Do you need to swap, sort, set, return or replace anything while you're doing this?"]},
+				 "responses" : ["How will you track it?","When will you return what you track?","Do you need to swap, sort, set, return or replace anything while you're doing this?"]},
 	"iterate" : {
 				 "weight" : 16,
-				 "responses" : ["What type of loop will you be using?","Can you do this recursively?","Are there any disadvantages to doing it this way?", "Is there a simpler approach?", "What's the easiest way to do this?", "What do you need to keep track of?", "What are your returns?"]},
+				 "responses" : ["What type of loop will you be using?","Can you do this recursively?","Are there any disadvantages to doing it this way?", "Is there a simpler approach?", "What's the easiest way to do this?", "What do you need to keep track of?", "What are your returns?", "How might you code this?"]},
 	"create" : {
 				 "weight" : 16,
 				 "responses" : ["Is it necessary to create it, might you just swap or replace?","Do you need to set any values?","Do you foresee any flaws with this approach?", "What's the most optimal way to do this?", "What's the bad way to do this?"]},
@@ -86,118 +189,12 @@ var responses = {
 	"sample" : {
 				 "weight" : 16,
 				 "responses" : ["Will you be using a sliding window?","Will you be using pointers?","What can you do with it?"]},
-	"hello" : {
-				 "weight" : 1,
-				 "responses" : ["Hi again! How is going?","How are you today? Any problems?"]},
 	"return" : {
 				 "weight" : 16,
-				 "responses" : ["Are you pretty cognizant of the scope?","Will you pass by reference or value?"]},
+				 "responses" : ["Do you know why?","How can you work towards that goal?"]},
 	"replace" : {
 				 "weight" : 16,
-				 "responses" : ["Is it okay to do that?","What else might you do?", "Is this efficient?"]},
-	"hi" : {
-				 "weight" : 1,
-				 "responses" : ["Hi again! How is going?","How are you today? Any problems?"]},
-	"goodbye" : {
-				 "weight" : 1,
-				 "responses" : ["Goodbye.  Thank you for talking to me."]},
-	"advice" : {
-		"weight" : 8,
-		"responses" : ["Check out my blog with <a href=\"https://comedytragedyepic.com/learning-advice/\" target=\"_blank\">Learning Advice</a>",
-			"I'm a big fan of the <a href=\"https://kanbanize.com/lean-management/improvement/5-whys-analysis-tool\" target=\"_blank\">Five Whys</a>.",
-			"You might enjoy the <a href=\"https://www.tocinstitute.org/five-focusing-steps.html\" target=\"_blank\">Theory of Constraints</a>.",
-			"You may enjoy discovering how to reframe your learning with <a href=\"https://barbaraoakley.com/\" target=\"_blank\">Barbara Oakley, PhD</a>.",
-			]},
-	"i need" : {
-				 "weight" : 5,
-				 "responses" : ["Why do you need *?","Would it really help you to get *?","Are you sure you need *?"],},
-	"why don\'t you" : {
-				 "weight" : 3,
-				 "responses" : ["Do you really think I don't *?","Perhaps eventually I will *.","Do you really want me to *?"],},
-	"why can\'t i" : {
-				 "weight" : 3,
-				 "responses" : ["Do you think you should be able to *?","If you could *, what would you do?","I don't know -- why can't you *?","Have you really tried?"],},
-	"i can\'t" : {
-				 "weight" : 4,
-				 "responses" : ["How do you know you can't \"*\"?","Perhaps you could * if you tried.","What would it take for you to *?"]},
-	"perhaps" : {
-				 "weight" : 1,
-				 "responses" : ["How do you know you can't \"*\"?","Perhaps you could * if you tried.","What would it take for you to *?"]},
-	"remember" : {
-				 "weight" : 5,
-				 "responses" : ["Do you often think of *?","Does thinking of * bring anything else to mind","What else do you recollect?","Why do you recollect * just now?","What in the present situation reminds you of *?","What is the connection between me and *?"]},
-	"do you remember" : {
-				 "weight" : 6,
-				 "responses" : ["Do you think I would forget?","Yes I do remember *."]},
-	"if" : {
-				 "weight" : 3,
-				 "responses" : ["Do you think it\'s likely that *?","Do you wish that *?","What do you know about *?","Really, if *?"]},
-	"name" : {
-				 "weight" : 15,
-				 "responses" : ["I am not interested in names.","I\'ve told you before, I do not care about names -- please continue."]},
-	"another language" : {
-				 "weight" : 1,
-				 "responses" : ["I told you before, I don't understand languages that are not English."]},
-	"computer" : {
-				 "weight" : 12,
-				 "responses" : ["Do computers worry you?","Why do you mention computers?","Could you expand on how computers and * are related?","What do you think machines have to do with your problem?","Don't you think computers can help people?","What about machines worrys you?","What do you think about machines?"]},
-	"are you" : {
-				 "weight" : 2,
-				 "responses" : ["Why are you interested in whether I am * or not?","Would you prefer if I weren't *?","Perhaps I am * in your fantasies.","Do you sometimes think I am *?"]},
-	"are" : {
-				 "weight" : 1,
-				 "responses" : ["Did you think they might not be *?","Would you like it if they were not *?","What if they were not *?","Possibly they are *."]},
-	"your" : {
-				 "weight" : 1,
-				 "responses" : ["Why are you concerned over my *?","What about your own *?","Are you worried about someone else's *?","Really, my *?"]},
-	"was i" : {
-				 "weight" : 2,
-				 "responses" : ["What if you were *?","Do you think you were *?","Were you *?","What would it mean if you were *?","What does * suggest to you?"]},
-	"was you" : {
-				 "weight" : 2,
-				 "responses" : ["Would you like to believe I was *?","What suggests that I was *?","What do you think?"]},
-	"i want" : {
-				 "weight" : 1,
-				 "responses" : ["What would it mean to you if you got it?","Why do you want it?","What if it didn't work?"]},
-	"i wanted" : {
-				 "weight" : 1,
-				 "responses" : ["Did you achieve it or simply moved on?", "Bruce Lee has said \"Absorb what is useful, discard what is useless and add what is specifically your own.\""]},
-	"i aimed" : {
-					"weight" : 1,
-					"responses" : ["Did you achieve it, or did you miss??"]},
-	"i tried" : {
-						"weight" : 1,
-						"responses" : ["What else did you try?"]},
-	"i am frustrated" : {
-				"weight" : 6,
-				"responses" : ["Sorry to hear you are frustrated. We're only human", "Step back for a moment, clear your mind.", "What can we work on to become unfrustrated?"]
-			},
-	"i am confused" : {
-				"weight" : 6,
-				"responses" : ["Bruce Lee has said \"A wise man can learn more from a foolish question than a fool can learn from a wise answer.\"", "Do any of these words seem like threads to unravel your confusion... \"compare, combine, call, track, set, assign, sort, swap, sample, return, iterate, create, return, replace\"?"]
-			},
-	"i am lost" : {
-				"weight" : 6,
-				"responses" : ["We'll sort it out.", "Being lost is the first place we must start in order find where we're going.", "What have you tried so far?"]
-			},
-	"i am stressed" : {
-				"weight" : 6,
-				"responses" : ["Enjoy this quote by Bruce Lee:\"You must be shapeless, formless, like water. When you pour water in a cup, it becomes the cup. When you pour water in a bottle, it becomes the bottle. When you pour water in a teapot, it becomes the teapot. Water can drip and it can crash. Become like water my friend.\"","That's okay, we'll work together to overcome the obstacle.", "It's good to admit that, it'll make it easier to grow from there.", "Bruce Lee once said \"Do not pray for an easy life, pray for the strength to endure a difficult one.\""]
-			},
-	"i need help" : {
-				"weight" : 6,
-				"responses" : ["Let's work together.", "The answer is within yourself, it's just a matter of finding it.", "What in particular do you need help on?", "Thank you for letting me know, tell me about the problem.", "Great! Tell me what you're working on."]
-			},
-	"i don't know" : {
-				"weight" : 6,
-				"responses" : ["Bruce Lee says \"Knowing is not enough, we must apply. Willing is not enough, we must do.\"", "Bruce Lee says \"Mistakes are always forgivable, if one has the courage to admit them.\"","You at least know \"*\"", "Look harder.", "Try harder.", "Tell me more about the code."]
-			},
-	"i am unsure" : {
-		"weight" : 6,
-		"responses" : ["That's okay, but at least what CAN you be sure of?", "Let's make a decision and go from there.", "What's a bad solution look like?", "What do you know you can do for sure, right now?", "Is there anything can we be certain of?"]
-	},
-
-	
+				 "responses" : ["Is it okay to do that?","What else might you do?", "Is this efficient?"]},	
 };
 
 /*
@@ -254,6 +251,8 @@ var synonyms = {
  * is valid if there is 1 to 3 words between "am" and
  * "happy"
  */
+
+// USING THIS FOR INCOMING SYNYONMS
 var responsesWithWildcard = {
 	"i am *1-3* confused" : {	
 							weight : 20,
@@ -290,7 +289,11 @@ var responsesWithWildcard = {
 	"use *1-3* loop" : {	
 						weight : 20,
 						replacementWord : "iterate"
-					}
+					},
+	"getting" : {	
+			weight : 1,
+			replacementWord : "get"
+		}
 	
 };
 
