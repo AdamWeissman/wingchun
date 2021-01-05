@@ -168,6 +168,12 @@ var responses = {
 						"You might gain from learning about <a href=\"https://www.whatmatters.com/get-started/\" target=\"_blank\">OKRs</a>.",
 						"You may enjoy discovering how to reframe your learning with <a href=\"https://barbaraoakley.com/\" target=\"_blank\">Barbara Oakley, PhD</a>.",
 						]},
+	"update" : {
+					"weight" : 7,
+					"responses" : ["Do you know how you would update it?", "Are there any things to be cautious of while updating?", "Is there more than one way to update?", "What happens after you update?", "What else are we missing?","Is there anything else to consider?", "Because?"]},
+	"updating" : {
+						"weight" : 7,
+						"responses" : ["Do you know how you would update it?", "Are there any things to be cautious of while updating?", "Is there more than one way to update?", "What happens after you update?", "What else are we missing?","Is there anything else to consider?", "Because?"]},								
 	"code" : {
 				 "weight" : 16,
 				 "responses" : [
