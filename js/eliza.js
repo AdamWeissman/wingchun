@@ -2,43 +2,24 @@ var responses = {
 	"NOTFOUND" : {
 				 "weight" : 0,
 				 "responses" : [
-						"Do you understand what the code you have does?",
-						"Do you understand your current code?",
-						"I'm not sure I understand you fully.",
-						"Can you elaborate on that?",
-						"What do you want to do?",
-						"What is the goal?",
+						"How can we better focus on this?",
+						"How else can we phrase this?",
+						"How can we think about this more illustratively?",
+						"Is there some angle we have not yet considered?",
 						"Why?",
-						"What are some obstacles?",
-						"Do you know the solution, yet lack execution?",
-						"Do you know what you want to do, but are uncertain of the approach?",
-						"Is the obstacle one of syntax or is it conceptual?",
-						"Is this a matter of syntax?",
-						"Let's change focus a bit... Tell me about what you're trying to do.",
-						"If that isn't the problem, might it be something else?",
-						"Tell me more about it.",
-						"Is there some value you could track that would help you?",
-						"Is there some method or function you could create?",
-						"How do you feel about this?"
+						"Is there an analogy that will help clarify what's going on?",
+						"What is an alternate way of looking at the situation?"
 					]
 				},
-	"this": {
-		"weight" : 1,
-		"responses" : ["Why?", "What's the purpose?"]
-	},
-	"get": {
-		"weight" : 1,
-		"responses" : ["Why?", "What's the value?"]
-	},
 	"you" : {
 					"weight" : 1,
-					"responses" : ["We were discussing you, not me.","Why do you say that about me?", "I'm here for you."]},
+					"responses" : ["Let's focus on you, not me.", "I'm here for you."]},
 	"yes" : {
 					"weight" : 1,
-					"responses" : ["Why do you think so?","You seem quite positive.","Nice, let's move forward from there."]},
+					"responses" : ["Why do you think so?","How can we move forward from here?","How can we make progress?"]},
 	"no" : {
 					"weight" : 1,
-					"responses" : ["Why not?","Are you sure?","What might be another way?", "Maybe you need to try harder?", "Things will only be as difficult as you make them.", "Perhaps you ought to try to reframe your way of looking at things?"]},
+					"responses" : ["Why not?","Are you sure?","What might be another way?", "Maybe you need to try harder?", "Things will only be as difficult as you make them.", "How can you reframe your way of looking at things?"]},
 	"i am" : {
 					"weight" : 1,
 					"responses" : ["I am sorry to hear that.","How long has that been?","Is that typical?","Be mindful of your mindset."]},
@@ -50,7 +31,7 @@ var responses = {
 				 "responses" : ["Can you think of a specific example?"]},
 	"maybe" : {
 					"weight" : 1,
-					"responses" : ["You don't seem very certain.", "Is there a way you can become more 'sure?'"]},
+					"responses" : ["You don't seem very certain.", "You said 'maybe'. Can we transform that into a 'yes' or 'no'?"]},
 	"hello" : {
 					"weight" : 1,
 					"responses" : ["Hi again! How is going?","How are you today? Any problems?"]},
@@ -62,44 +43,40 @@ var responses = {
 					"responses" : ["Goodbye.  Thank you for talking to me."]},
 	"perhaps" : {
 					"weight" : 1,
-					"responses" : ["How do you know you can't ?","Perhaps you could if you tried.","What would it take for you to accomplish that?"]},
+					"responses" : ["How do you know you can't?","Perhaps you could if you tried.","What would it take for you to advance from where you are?"]},
 	"another language" : {
 					 "weight" : 1,
 					 "responses" : ["I told you before, I don't understand languages that are not English."]},
-	"are" : {
-					"weight" : 1,
-					"responses" : ["Did you think they might not be?","Would you like it if they were not?","What if they were not?","Possibly they are."]},
 	"your" : {
 					"weight" : 1,
 					"responses" : ["Why are you concerned about it?","What about your own issue?","Are you worried about someone else?","Really?"]},
 	"i want" : {
 					"weight" : 1,
-					"responses" : ["What would it mean to you if you got it?","Why do you want it?","What if it didn't work?"]},
+					"responses" : ["Why do you want to do that?","What can we measure to know if we're going in the right direction?", "If we can't accomplish that, what is an alternative?", "If you got what you wanted, where would we go from there?"]},
 	"i wanted" : {
 					"weight" : 1,
-					"responses" : ["Did you achieve it or simply moved on?", "Bruce Lee has said \"Absorb what is useful, discard what is useless and add what is specifically your own.\""]},
+					"responses" : ["Did you achieve it, or did you miss?", "Did you achieve it or simply moved on?", "Bruce Lee has said \"Absorb what is useful, discard what is useless and add what is specifically your own.\""]},
 	"i aimed" : {
 					"weight" : 1,
-					"responses" : ["Did you achieve it, or did you miss??"]},
+					"responses" : ["Did you achieve it, or did you miss?","Did you achieve it or simply moved on?", "Bruce Lee has said \"Absorb what is useful, discard what is useless and add what is specifically your own.\""]},
 	"i think" : {
 					"weight" : 2,
-					"responses" : ["Perhaps then it is time for action?","Do you really think so?", "Truly?", "Might it be something else?", "Bruce Lee once said \"If you spend too much time thinking aout a thing, you'll never get it done.\""]},	
+					"responses" : ["How can we know?", "What can we measure to make progress from here?", "What can we test?", "Perhaps then it is time for action?","Do you really think so?", "Truly?", "Might it be something else?", "Bruce Lee once said \"If you spend too much time thinking aout a thing, you'll never get it done.\""]},	
 	"you serious" : {
 					"weight" : 2,
-					"responses" : ["You have no idea.", "Am I??", "What do you think?"]
-	},
+					"responses" : ["You have no idea.", "Am I??", "What do you think?"]},
 	"are you" : {
 					"weight" : 2,
 					"responses" : ["Why are you interested in that?","Would you prefer that?","What do you think?"]},
 	"was i" : {
 					"weight" : 2,
-					"responses" : ["What if?","Do you think you were?","Were you?","What would it mean if you were?","What does that suggest to you?"]},
+					"responses" : ["I don't know.","Do you think you were?","Were you?","What would it mean if you were?","What does that suggest to you?"]},
 	"was you" : {
 					"weight" : 2,
 					"responses" : ["Would you like to believe that?","What suggests that?","What do you think?"]},
 	"if" : {
 					"weight" : 3,
-					"responses" : ["Do you think it\'s likely?","What else?","What other conditions must your consider?","Really?"]},
+					"responses" : ["Do you think it\'s likely?","What else can we consider?","What other conditions must your consider?","Really?"]},
 	"why don\'t you" : {
 					"weight" : 3,
 					"responses" : ["Do you really think I don't?","Perhaps eventually I will.","Do you really want me to?"],},
@@ -116,9 +93,8 @@ var responses = {
 					"weight" : 5,
 					"responses" : ["Are you sure you need to?"]},
 	"index" : {
-		"weight" : 5,
-		"responses" :  ["Do you need to assign a value to the index?", "Are you working with more than one index?"]
-	},
+					"weight" : 5,
+					"responses" :  ["Do you need to assign a value to the index?", "Are you working with more than one index?", "How will you track it?"]},
 	"do you remember" : {
 					"weight" : 6,
 					"responses" : ["Do you think I would forget?","Yes I do remember."]},	
@@ -142,13 +118,13 @@ var responses = {
 					"responses" : ["Bruce Lee says \"Knowing is not enough, we must apply. Willing is not enough, we must do.\"", "Bruce Lee says \"Mistakes are always forgivable, if one has the courage to admit them.\"","You at least know that you don't know.", "Look harder.", "Try harder.", "Tell me more about the code."]},
 	"i am unsure" : {
 					"weight" : 6,
-					"responses" : ["That's okay, but at least what CAN you be sure of?", "Let's make a decision and go from there.", "What's a bad solution look like?", "What do you know you can do for sure, right now?", "Is there anything can we be certain of?"]},
+					"responses" : ["That's okay, but what CAN we be sure of?", "Let's make a decision and move forward.", "What's a bad solution look like?", "What do you know you can do for sure, right now?", "Is there anything can we be certain of?"]},
 	"i tried" : {
 					"weight" : 6,
-					"responses" : ["What else did you try?", "What was the result?", "Was the result what you expected?"]},
+					"responses" : ["What else did you try?", "What else can you try?", "What was the result?", "Was the result what you expected?"]},
 	"because" : {
 					"weight" : 6,
-					"responses" : ["Is that the real reason?", "Can you drill down on a cause?", "What other causes might there be?", "What else are we missing?"]},
+					"responses" : ["Is that the real reason?", "Why?", "Can you drill down on a cause?", "What other causes might there be?", "What else are we missing?","What other causes are there to consider?", "Because?"]},
 	"advice" : {
 					"weight" : 8,
 					"responses" : ["Check out my blog with <a href=\"https://comedytragedyepic.com/learning-advice/\" target=\"_blank\">Learning Advice</a>",
@@ -158,7 +134,13 @@ var responses = {
 						]},
 	"code" : {
 				 "weight" : 16,
-				 "responses" : ["Tell me more about your code.","Is there some value you can call, combine, set or assign?","Might you iterate, track, or create some variable?"]},
+				 "responses" : [
+					 "How can we better test the code?",
+					 "Is there some value or function you can call?",
+					 "Might you combine, set or assign some value?",
+					 "Might you iterate, track, or create some variable?",
+					 "Tell me more about what the code has to do.",
+					 "What else will this code need to do?"]},
 	"compare" : {
 				 "weight" : 16,
 				 "responses" : ["Tell me more about the code.","What are you comparing? To what?","If you're going to be comparing values, might you need to track something as well?", "If you're comparing such and such values, is there anything you need to replace, or swap?"]},
@@ -290,33 +272,25 @@ var responsesWithWildcard = {
 						weight : 20,
 						replacementWord : "iterate"
 					},
-	"getting" : {	
-			weight : 1,
-			replacementWord : "get"
-		}
+	"*1-3* coding" : {	
+						weight : 20,
+						replacementWord : "code"
+					},
+
 	
 };
 
 
 var initialMessages = [
-	"Hi. What are you working on?",
-	"Hello, what difficulty do you face?",
-	"What is the problem you're facing?",
-	"What troubles you?",
-	"What is your goal today?",
-	"What problem are you hoping to solve?",
-	"Hello friend, what problem are you facing?",
-	"Hi, what can I help you with?",
-	"Tell me about your code.",
-	"What brings you here today?",
-	"What struggle do you face with your code?",
-	"What problem are you wrestling with?",
-	"What goal are you fighting to achieve?",
-	"What is your current struggle?",
-	"Tell me about the coding problem you face."
+	"Hi, what coding problem are we focused on today?",
+	"Hello, what is the coding problem we are trying to solve?",
+	"What coding problem are we facing at the moment?",
+	"What are we aiming to code today?",
+	"Hi there.  What are we trying to code right now?"
+
 	];
 //var initialMessages = ["Hi there, welcome to my office. I'm here to chat about anything. What's on your mind?", "How do you do. Please tell me your problem.","Please tell me what's been bothering you.", "Is something troubling you?", "Hello. How are you doing today?"];
-var endChatTerms = ["goodbye","I have to leave","I have to leave.","quit","bye","exit"];
+var endChatTerms = ["goodbye","I have to leave","I have to go.","quit","bye","exit", "see you later"];
 var chatHistory = [];
 var keywords = [];
 var conversationOver = false;
