@@ -39,6 +39,19 @@
   animation: neon6 1.5s ease-in-out infinite alternate;
 }
 
+.advice_message{
+  -webkit-transition: all 8s;
+  -moz-transition: all 8s;
+  transition: all 8s;
+
+  color: #ffffff;
+	font-family: Audiowide;;
+	
+  -webkit-animation: neonOrange 1.5s ease-in-out infinite alternate;
+  -moz-animation: neonOrange 025s ease-in-out infinite alternate;
+  animation: neonOrange 1.5s ease-in-out infinite alternate;
+}
+
 /* @-webkit-keyframes neon4 {
   from {
     box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #B6FF00, 0 0 70px #B6FF00, 0 0 80px #B6FF00, 0 0 100px #B6FF00, 0 0 150px #B6FF00;
@@ -112,28 +125,30 @@
 
 @-webkit-keyframes neonOrange {
   from {
-    box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FF9900, 0 0 70px #FF9900, 0 0 80px #FF9900, 0 0 100px #FF9900, 0 0 150px #FF9900;
+    text-shadow: 0 0 5px #fff, 0 0 8px #fff, 0 0 13px #fff, 0 0 8px #FF9900, 0 0 13px #FF9900, 0 0 8px #FF9900, 0 0 13px #f700ff, 0 0 8px #f700ff;
   }
   to {
-    box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FF9900, 0 0 35px #FF9900, 0 0 40px #FF9900, 0 0 50px #FF9900, 0 0 75px #FF9900;
+    text-shadow: 0 0 8px #fff, 0 0 13px #fff, 0 0 21px #fff, 0 0 5px #FF9900, 0 0 8px #FF9900, 0 0 5px #FF9900, 0 0 8px #f700ff, 0 0 5px #f700ff;
   }
 }
 
+
+
 @-moz-keyframes neonOrange {
   from {
-    box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FF9900, 0 0 70px #FF9900, 0 0 80px #FF9900, 0 0 100px #FF9900, 0 0 150px #FF9900;
+    text-shadow: 0 0 5px #fff, 0 0 8px #fff, 0 0 13px #fff, 0 0 8px #FF9900, 0 0 13px #FF9900, 0 0 8px #FF9900, 0 0 13px #f700ff, 0 0 8px #f700ff;
   }
   to {
-    box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FF9900, 0 0 35px #FF9900, 0 0 40px #FF9900, 0 0 50px #FF9900, 0 0 75px #FF9900;
+    text-shadow: 0 0 8px #fff, 0 0 13px #fff, 0 0 21px #fff, 0 0 5px #FF9900, 0 0 8px #FF9900, 0 0 5px #FF9900, 0 0 8px #f700ff, 0 0 5px #f700ff;
   }
 }
 
 @keyframes neonOrange {
   from {
-    box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FF9900, 0 0 70px #FF9900, 0 0 80px #FF9900, 0 0 100px #FF9900, 0 0 150px #FF9900;
+    text-shadow: 0 0 5px #fff, 0 0 8px #fff, 0 0 13px #fff, 0 0 8px #FF9900, 0 0 13px #FF9900, 0 0 8px #FF9900, 0 0 13px #f700ff, 0 0 8px #f700ff;
   }
   to {
-    box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FF9900, 0 0 35px #FF9900, 0 0 40px #FF9900, 0 0 50px #FF9900, 0 0 75px #FF9900;
+    text-shadow: 0 0 8px #fff, 0 0 13px #fff, 0 0 21px #fff, 0 0 5px #FF9900, 0 0 8px #FF9900, 0 0 5px #FF9900, 0 0 8px #f700ff, 0 0 5px #f700ff;
   }
 }
 

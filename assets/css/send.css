@@ -39,15 +39,11 @@
 neonBlue {
 
   from {
-		clip-path: ellipse(49% 150% at 50% 150%);
-		transform: skewY(40%);
     text-shadow: 0 0 5px #fff, 0 0 8px #fff, 0 0 13px #fff, 0 0 8px #228DFF, 0 0 13px #228DFF, 0 0 8px #228DFF, 0 0 13px #228DFF, 0 0 8px #228DFF;
   }
   to {
-		clip-path: ellipse(49% 150% at 50% 150%);
-		transform: skewY(40%);
     text-shadow: 0 0 8px #fff, 0 0 13px #fff, 0 0 21px #fff, 0 0 5px #228DFF, 0 0 8px #228DFF, 0 0 5px #228DFF, 0 0 8px #228DFF, 0 0 5px #228DFF;
-	};
+  }
 }
 
 @-moz-keyframes neonBlue {

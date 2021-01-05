@@ -53,13 +53,13 @@ var responses = {
 					"weight" : 1,
 					"responses" : ["Why are you concerned about it?","What about your own issue?","Are you worried about someone else?","Really?"]},
 	"i want" : {
-					"weight" : 1,
-					"responses" : ["Why do you want to do that?","What can we measure to know if we're going in the right direction?", "If we can't accomplish that, what is an alternative?", "If you got what you wanted, where would we go from there?"]},
+					"weight" : 2,
+					"responses" : ["Why do you want to do that?","What can we measure to know if we're going in the right direction?", "If we can't accomplish that, what is an alternative?", "If you got what you wanted, where would we go from there?","What would be some first steps to make that goal a reality?", "Have you thought about all the things you need to do to make that a reality?", "What would the minimum viable version of that look like", "How can you better express this 'want'?"]},
 	"i wanted" : {
-					"weight" : 1,
+					"weight" : 2,
 					"responses" : ["Did you achieve it, or did you miss?", "Did you achieve it or simply moved on?", "Bruce Lee has said \"Absorb what is useful, discard what is useless and add what is specifically your own.\""]},
 	"i aimed" : {
-					"weight" : 1,
+					"weight" : 2,
 					"responses" : ["Did you achieve it, or did you miss?","Did you achieve it or simply moved on?", "Bruce Lee has said \"Absorb what is useful, discard what is useless and add what is specifically your own.\""]},
 	"i think" : {
 					"weight" : 2,
@@ -78,7 +78,7 @@ var responses = {
 					"responses" : ["Would you like to believe that?","What suggests that?","What do you think?"]},
 	"if" : {
 					"weight" : 3,
-					"responses" : ["Do you think it\'s likely?","What else can we consider?","What other conditions must your consider?","Really?"]},
+					"responses" : ["Do you think it\'s likely?","What else is there to consider?","What other conditions must your consider?","Really?"]},
 	"why don\'t you" : {
 					"weight" : 3,
 					"responses" : ["Do you really think I don't?","Perhaps eventually I will.","Do you really want me to?"],},
@@ -93,7 +93,17 @@ var responses = {
 					"responses" : ["Tell me more about such feelings.","Is that helpful?","Remember we are masters of our emotions.","Why do you feel that way?"]},
 	"i need" : {
 					"weight" : 5,
-					"responses" : ["Are you sure you need to?"]},
+					"responses" : [
+						"Are you sure you need to?",
+						"How will you accomplish this?",
+						"Is this definitely something you want to do?",
+						"What can you measure to make sure you're making progress towards that goal?",
+						"What else do you need to consider?",
+						"What have you not considered that might make things easier for you?",
+						"What have you not considered that might make things more difficult for you?",
+						"Do you know how to articulate this, or at least some of it in code?",
+						"What obstacles do you face?"
+					]},
 	"problem" : {
 						"weight" : 5,
 						"responses" : [
@@ -101,8 +111,21 @@ var responses = {
 							"What is a sub-problem we can work on instead?",
 							"What should we measure to know if we're making progress on this problem?",
 							"What's the smallest thing we can do to know that we're making progress on this problem?",
-							"Is ther some prebuilt solution elsewhere you can modify? to meet your needs"
+							"Is ther some prebuilt solution elsewhere you can modify? to meet your needs",
+							"Remember that every problem is half a solution. Believe in yourself."
 						]},
+	"obstacle" : {
+						"weight" : 5,
+						"responses" : [
+							"How can we rephrase this problem?",
+							"What other obstacles have you not considered?",
+							"What is a sub-problem we can work on instead?",
+							"What related obstacles or problems might you face?",
+							"What should we measure to know if we're making progress on this problem?",
+							"What can we measure to know we're overcoming the obstacle?",
+							"What's the smallest thing we can do to know that we're making progress on this problem?",
+							"Is ther some prebuilt solution elsewhere you can modify? to meet your needs"
+						]},						
 	"index" : {
 					"weight" : 5,
 					"responses" :  ["Do you need to assign a value to the index?", "Are you working with more than one index?", "How will you track it?"]},
@@ -141,6 +164,8 @@ var responses = {
 					"responses" : ["Check out my blog with <a href=\"https://comedytragedyepic.com/learning-advice/\" target=\"_blank\">Learning Advice</a>",
 						"I'm a big fan of the <a href=\"https://kanbanize.com/lean-management/improvement/5-whys-analysis-tool\" target=\"_blank\">Five Whys</a>.",
 						"You might enjoy the <a href=\"https://www.tocinstitute.org/five-focusing-steps.html\" target=\"_blank\">Theory of Constraints</a>.",
+						"You might enjoy the <a href=\"https://www.franklincovey.com/the-4-disciplines/\" target=\"_blank\">4 Disciplines of Execution</a>.",
+						"You might gain from learning about <a href=\"https://www.whatmatters.com/get-started/\" target=\"_blank\">OKRs</a>.",
 						"You may enjoy discovering how to reframe your learning with <a href=\"https://barbaraoakley.com/\" target=\"_blank\">Barbara Oakley, PhD</a>.",
 						]},
 	"code" : {
@@ -196,6 +221,8 @@ var responses = {
 					"What else will this code need to do?",
 					"What are some values you can or should compare?",
 					"Do you know the syntax well?",
+					"How will we track that?",
+					"Are there many ways to track that data?",
 					"Is there an associated concept you're struggling on?",
 					"Is ther some prebuilt solution elsewhere you can modify?",
 					"What should we be tracking to make your code successful?",
